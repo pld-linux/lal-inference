@@ -1,0 +1,11 @@
+--- lalinference-4.1.1/lib/distance_integrator.c.orig	2022-09-06 10:24:18.086021797 +0200
++++ lalinference-4.1.1/lib/distance_integrator.c	2023-02-10 10:23:02.578433203 +0100
+@@ -246,7 +246,7 @@ double log_radial_integral(double r1, do
+ 			abstol*=2;
+ 			break;
+ 		case GSL_EMAXITER:
+-			fprintf(stderr,"GSL error %s, increasing n to %li\n",gsl_strerror(ret),n*=2);
++			fprintf(stderr,"GSL error %s, increasing n to %zd\n",gsl_strerror(ret),n*=2);
+ 			break;
+ 		case GSL_SUCCESS:
+ 			break;
