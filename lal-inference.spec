@@ -3,7 +3,7 @@ Summary:	LAL routines for Bayesian inference data analysis
 Summary(pl.UTF-8):	Procedury LAL do analizy danych wywodów bayesowskich
 Name:		lal-inference
 Version:	4.1.1
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Libraries
 Source0:	http://software.igwn.org/lscsoft/source/lalsuite/lalinference-%{version}.tar.xz
@@ -99,7 +99,7 @@ Requires:	%{name} = %{version}-%{release}
 Requires:	python3-lal >= 7.2.2
 Requires:	python3-lalburst >= 1.6.0
 Requires:	python3-lalmetaio >= 3.0.0
-Requires:	python3-lalinspieral >= 3.0.0
+Requires:	python3-lalinspiral >= 3.0.0
 Requires:	python3-lalsimulation >= 4.0.0
 Requires:	python3-ligo-lw >= 1.7.0
 Requires:	python3-ligo-segments
