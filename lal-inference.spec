@@ -2,25 +2,25 @@
 Summary:	LAL routines for Bayesian inference data analysis
 Summary(pl.UTF-8):	Procedury LAL do analizy danych wywodów bayesowskich
 Name:		lal-inference
-Version:	4.1.1
-Release:	2
+Version:	4.1.6
+Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://software.igwn.org/lscsoft/source/lalsuite/lalinference-%{version}.tar.xz
-# Source0-md5:	9391ce2650fc47fcb34154d398b32bac
+# Source0-md5:	6c582231b31342e4562eb1fa94fb37d0
 Patch0:		lalinference-env.patch
 Patch1:		lalinference-format.patch
 URL:		https://wiki.ligo.org/Computing/LALSuite
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
 BuildRequires:	gsl-devel >= 1.15
-BuildRequires:	help2man
-BuildRequires:	lal-devel >= 7.2.2
-BuildRequires:	lal-burst-devel >= 1.6.0
-BuildRequires:	lal-frame-devel >= 2.0.0
-BuildRequires:	lal-inspiral-devel >= 3.0.0
-BuildRequires:	lal-metaio-devel >= 3.0.0
-BuildRequires:	lal-simulation-devel >= 4.0.0
+BuildRequires:	help2man >= 1.37
+BuildRequires:	lal-devel >= 7.5.0
+BuildRequires:	lal-burst-devel >= 2.0.0
+BuildRequires:	lal-frame-devel >= 3.0.0
+BuildRequires:	lal-inspiral-devel >= 5.0.0
+BuildRequires:	lal-metaio-devel >= 4.0.0
+BuildRequires:	lal-simulation-devel >= 5.4.0
 BuildRequires:	libgomp-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	octave-devel >= 1:3.2.0
@@ -33,12 +33,12 @@ BuildRequires:	swig-python >= 3.0.11
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires:	gsl >= 1.15
-Requires:	lal >= 7.2.2
-Requires:	lal-burst >= 1.6.0
-Requires:	lal-frame >= 2.0.0
-Requires:	lal-inspiral >= 3.0.0
-Requires:	lal-metaio >= 3.0.0
-Requires:	lal-simulation >= 4.0.0
+Requires:	lal >= 7.5.0
+Requires:	lal-burst >= 2.0.0
+Requires:	lal-frame >= 3.0.0
+Requires:	lal-inspiral >= 5.0.0
+Requires:	lal-metaio >= 4.0.0
+Requires:	lal-simulation >= 5.4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -53,12 +53,12 @@ Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki lal-inference
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gsl-devel >= 1.15
-Requires:	lal-devel >= 7.2.2
-Requires:	lal-burst-devel >= 1.6.0
-Requires:	lal-frame-devel >= 2.0.0
-Requires:	lal-inspiral-devel >= 3.0.0
-Requires:	lal-metaio-devel >= 3.0.0
-Requires:	lal-simulation-devel >= 4.0.0
+Requires:	lal-devel >= 7.5.0
+Requires:	lal-burst-devel >= 2.0.0
+Requires:	lal-frame-devel >= 3.0.0
+Requires:	lal-inspiral-devel >= 5.0.0
+Requires:	lal-metaio-devel >= 4.0.0
+Requires:	lal-simulation-devel >= 5.4.0
 
 %description devel
 Header files for lal-inference library.
@@ -83,7 +83,7 @@ Summary:	Octave interface for LAL Inference
 Summary(pl.UTF-8):	Interfejs Octave do biblioteki LAL Inference
 Group:		Applications/Math
 Requires:	%{name} = %{version}-%{release}
-Requires:	octave-lal >= 7.2.2
+Requires:	octave-lal >= 7.5.0
 
 %description -n octave-lalinference
 Octave interface for LAL Inference.
@@ -96,9 +96,9 @@ Summary:	Python bindings for LAL Inference
 Summary(pl.UTF-8):	Wiązania Pythona do biblioteki LAL Inference
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
-Requires:	python3-lal >= 7.2.2
+Requires:	python3-lal >= 7.5.0
 Requires:	python3-lalburst >= 1.6.0
-Requires:	python3-lalmetaio >= 3.0.0
+Requires:	python3-lalmetaio >= 4.0.0
 Requires:	python3-lalinspiral >= 3.0.0
 Requires:	python3-lalsimulation >= 4.0.0
 Requires:	python3-ligo-lw >= 1.7.0
