@@ -3,7 +3,7 @@ Summary:	LAL routines for Bayesian inference data analysis
 Summary(pl.UTF-8):	Procedury LAL do analizy danych wywodów bayesowskich
 Name:		lal-inference
 Version:	4.1.6
-Release:	
+Release:	2
 License:	GPL v2
 Group:		Libraries
 Source0:	http://software.igwn.org/lscsoft/source/lalsuite/lalinference-%{version}.tar.xz
@@ -119,8 +119,8 @@ Wiązania Pythona do biblioteki LAL Inference.
 
 %prep
 %setup -q -n lalinference-%{version}
-%patch0 -p1
-%patch1 -p1
+%patch -P 0 -p1
+%patch -P 1 -p1
 
 %{__sed} -i -e '1s,/usr/bin/env bash,/bin/bash,' bin/lalinference_mpi_wrapper
 
