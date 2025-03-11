@@ -3,7 +3,7 @@ Summary:	LAL routines for Bayesian inference data analysis
 Summary(pl.UTF-8):	Procedury LAL do analizy danych wywodów bayesowskich
 Name:		lal-inference
 Version:	4.1.6
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		Libraries
 Source0:	http://software.igwn.org/lscsoft/source/lalsuite/lalinference-%{version}.tar.xz
